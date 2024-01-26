@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# EVOCORP-Technical-Challenges
 
-First, run the development server:
+Repository developed to solve the technical challenge of the EVOCORP Junior Front-end Developer selection process.
+
+## Get Started
+
+Clone the repository, install the TypeScript dependency globally, and follow the instructions to run the challenges.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/gerald0n/evocorp-technical-challenge.git
+  cd evocorp-technical-challenge
+  npm install
+  npm run dev
 ```
+## Challenge
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Instruções
+Desenvolva uma aplicação web simples para exibir um catálogo de filmes consumindo a API pública The Movie Database TMDb - https://www.themoviedb.org/documentation/api
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Requisitos:
+    1. Página Inicial:
+   - Exiba uma lista de filmes populares.
+   - Cada item da lista deve mostrar o título do filme, a imagem da capa e a pontuação média.
+   - Ao clicar em um filme, redirecione para uma página de detalhes desse filme.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    2. Página de Detalhes:
+   - Exiba informações detalhadas sobre o filme selecionado, como sinopse, data de lançamento, gêneros, etc.
+   - Adicione um botão de voltar à página inicial.
 
-## Learn More
+    3. Tecnologias Obrigatórias:
+   - Utilize Next.js para a construção da aplicação.
+   - Use React.js para a criação dos componentes.
+   - Implemente TypeScript para tipagem.
+   - Faça uso do Git para versionamento do código.
+   - Consuma a API do TMDb para obter os dados dos filmes.
 
-To learn more about Next.js, take a look at the following resources:
+    4. Bônus (opcional):
+   - Adicione funcionalidade de busca para encontrar filmes específicos.
+   - Implemente um design responsivo para garantir uma boa experiência em dispositivos móveis.
+   - Utilize algum estado global (por exemplo, Context API ou Redux) para gerenciar o estado da aplicação, se julgar necessário.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Observações:
+- Sinta-se à vontade para utilizar bibliotecas adicionais se achar necessário.
+- A simplicidade e a clareza do código serão consideradas na avaliação.
+- Não é necessário implementar testes automatizados, mas será um diferencial.
