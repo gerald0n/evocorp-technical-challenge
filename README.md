@@ -13,12 +13,18 @@ Clone the repository, install the TypeScript dependency globally, and follow the
   npm install
   npm run dev
 ```
+
+## .ENVS
+
+NEXT_PUBLIC_API_URL = 'https://api.themoviedb.org/3/'
+API_KEY = #SUA KEY
+
 ## Challenge
 
-### Instruções
+### instructions
 Desenvolva uma aplicação web simples para exibir um catálogo de filmes consumindo a API pública The Movie Database TMDb - https://www.themoviedb.org/documentation/api
 
-### Requisitos:
+### requirements:
     1. Página Inicial:
    - Exiba uma lista de filmes populares.
    - Cada item da lista deve mostrar o título do filme, a imagem da capa e a pontuação média.
@@ -40,7 +46,7 @@ Desenvolva uma aplicação web simples para exibir um catálogo de filmes consum
    - Implemente um design responsivo para garantir uma boa experiência em dispositivos móveis.
    - Utilize algum estado global (por exemplo, Context API ou Redux) para gerenciar o estado da aplicação, se julgar necessário.
 
-## Observações:
+## comments:
 - Sinta-se à vontade para utilizar bibliotecas adicionais se achar necessário.
 - A simplicidade e a clareza do código serão consideradas na avaliação.
 - Não é necessário implementar testes automatizados, mas será um diferencial.
