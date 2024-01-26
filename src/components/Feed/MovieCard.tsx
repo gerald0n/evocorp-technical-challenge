@@ -1,11 +1,14 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function MovieCard({
+   id,
    pathImage,
    title,
    rating,
    
 }: {
+   id: number
    pathImage: string
    title: string
    rating: number
@@ -13,7 +16,7 @@ export default function MovieCard({
    const baseUrlImage = 'https://image.tmdb.org/t/p'
 
    return (
-      <div
+      <Link href={`/movie/${id}`}
          className="my-5 flex flex-col items-center max-w-fill text-center gap-1 overflow-hidden rounded-bl-md rounded-br-md bg-custom-black text-white cursor-pointer"
          style={{
             height: '470px'
@@ -46,6 +49,6 @@ export default function MovieCard({
             </span>
             <h2 className="container overflow-wrap break-word">{title}</h2>
          </div>
-      </div>
+      </Link>
    )
 }

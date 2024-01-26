@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import play from '../../public/play.png'
+import play from '../../../public/play.png'
 import Link from 'next/link'
 
 export default function Navbar() {

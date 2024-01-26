@@ -9,7 +9,8 @@ const config: Config = {
    theme: {
       extend: {
          backgroundColor: {
-            'custom-black': '#1a1a1a'
+            'custom-black': '#1a1a1a',
+            'custom-pink': '#ff7c89',
          },
          screens: {
             lg: '790px'
