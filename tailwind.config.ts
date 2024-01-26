@@ -12,7 +12,10 @@ const config: Config = {
             'custom-black': '#1a1a1a'
          },
          screens: {
-            lg: '700px'
+            lg: '790px'
+         },
+         height: {
+            'size-image': '500px',
          }
       }
    },

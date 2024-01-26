@@ -1,4 +1,4 @@
-import { MovieResult, RequestOptions } from '@/types'
+import { Movie, MovieResult, RequestOptions } from '@/types'
 
 const token = process.env.API_KEY
 const baseURL = process.env.NEXT_PUBLIC_API_URL
@@ -21,7 +21,7 @@ export async function getMovies(): Promise<MovieResult> {
 
 // getDetailsMovieById baseURL/movie/${id}?language=pt-BR
 
-export async function getDatailsMovieById(movieId: string | number) {
+export async function getDatailsMovieById(movieId: number): Promise<Movie> {
    const response = await fetch(`${baseURL}/movie/${movieId}?language=pt-BR`, options)
 
    return response.json()
