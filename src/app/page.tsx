@@ -12,7 +12,7 @@ export default async function Home() {
                <div className="w-1 h-8 rounded-md bg-custom-pink"></div>Filmes Populares
             </h1>
             <div className="lg:container lg:m-auto lg:flex lg:flex-wrap lg:gap-10 lg:items-center lg:justify-between">
-               {movies.map((movie: Movie) => (
+               {movies?.map((movie: Movie) => (
                   <MovieCard
                      key={movie.id}
                      id={movie.id}

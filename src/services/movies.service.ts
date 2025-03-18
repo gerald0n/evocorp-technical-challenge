@@ -15,7 +15,7 @@ const options: RequestOptions = {
 
 export async function getMovies(): Promise<MovieResult> {
    const response = await fetch(`${baseURL}/movie/popular?language=pt-BR&page=1`, options)
-
+   console.log(response)
    return response.json()
 }
 

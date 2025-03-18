@@ -29,7 +29,7 @@ export default function MovieDetails({ movie }: { movie: Movie }) {
                <h1 className="text-3xl">{movie.title}</h1>
                <p className="text-sm text-gray-300">Titulo original: {movie.original_title}</p>
                <p className="text-sm text-gray-300">
-                  {`${movie.release_date.split('-')[0]} • 
+                  {`${movie.release_date?.split('-')[0]} • 
                ${handleConversionOfminutesToHours(movie.runtime)}`}
                   <br />
                </p>

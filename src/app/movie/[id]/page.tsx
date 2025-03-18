@@ -1,10 +1,10 @@
 import ReturnLink from '@/components/Feed/ReturnLink'
 import MovieDetails from '@/components/MovieDetails/MovieDetails'
 import { getDatailsMovieById } from '@/services/movies.service'
-import { Movie } from '@/types'
+import { Movie as MovieType } from '@/types'
 
 export default async function Movie({ params: { id } }: { params: { id: number } }) {
-   const movie: Movie = await getDatailsMovieById(id)
+   const movie: MovieType = await getDatailsMovieById(id)
 
    return (
       <div className="flex flex-col items-center lg:items-start">
